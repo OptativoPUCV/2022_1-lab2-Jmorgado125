@@ -29,30 +29,59 @@ Node * createNode(void * data) {
 }
 
 List * createList() {
-     return NULL;
+  List * lista=(List*)calloc(1,sizeof(List));
+  lista->head=NULL;
+  lista->tail=NULL;
+  lista->current=NULL;
+     return lista;
 }
 
-void * firstList(List * list) {
-    return NULL;
+void * firstList(List * lista) {
+  if(lista->head ==NULL){return NULL;}
+  lista->head=lista->current
+  return lista->prev->data;
 }
 
-void * nextList(List * list) {
-    return NULL;
+void * nextList(List * lista) {
+  if(lista->next=NULL){return NULL;}
+  lista->current=lista->next;
+  return lista->next->data;
 }
 
-void * lastList(List * list) {
-    return NULL;
+void * lastList(List * lista) {
+  if(lista->tail ==NULL){return NULL;}
+  lista->current=lista->tail;
+  return lista->tail->data;
 }
 
-void * prevList(List * list) {
-    return NULL;
+void * prevList(List * lista) {
+  if(lista->current->prev ==NULL){return NULL;}
+  lista->current=lista->prev;
+  return lista->prev->data;
 }
-
 void pushFront(List * list, void * data) {
+    Node* n=createNode(data);
+    if(n !=NULL)
+    {
+        n->next=list->head;
+        if(list->head !=NULL)
+        {
+            list->head->prev=n;
+        }
+        list->head=n;
+    }
+    
+
 }
 
 void pushBack(List * list, void * data) {
     list->current = list->tail;
+    Node* n=createNode(data);
+    if (list->head==NULL)
+        list->head=n;      
+    else
+        list->tail->next=n;
+    list->tail=n;
     pushCurrent(list,data);
 }
 

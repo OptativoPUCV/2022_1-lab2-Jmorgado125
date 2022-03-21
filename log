@@ -2,3 +2,43 @@ do., 20 de mar. de 2022 19:37:26:
  tests:  0|6
 total_score: 0/70
 87804b2
+do., 20 de mar. de 2022 21:27:07: 
+ list.c | 49 +++++++++++++++++++++++++++++++++++++++----------
+ 1 file changed, 39 insertions(+), 10 deletions(-)
+In file included from test.c:5:0:
+list.c: In function 'firstList':
+list.c:42:3: error: expected ';' before 'return'
+   return lista->prev->data;
+   ^~~~~~
+list.c: In function 'nextList':
+list.c:46:11: error: 'List {aka struct List}' has no member named 'next'
+   if(lista->next=NULL){return NULL;}
+           ^~
+list.c:47:23: error: 'List {aka struct List}' has no member named 'next'
+   lista->current=lista->next;
+                       ^~
+list.c:48:15: error: 'List {aka struct List}' has no member named 'next'
+   return lista->next->data;
+               ^~
+list.c: In function 'prevList':
+list.c:59:23: error: 'List {aka struct List}' has no member named 'prev'
+   lista->current=lista->prev;
+                       ^~
+list.c:60:15: error: 'List {aka struct List}' has no member named 'prev'
+   return lista->prev->data;
+               ^~
+list.c: In function 'firstList':
+list.c:43:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+list.c: In function 'nextList':
+list.c:49:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+list.c: In function 'prevList':
+list.c:61:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+3cf8ada
