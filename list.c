@@ -121,7 +121,24 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
+    Node* DatoElim=list->current;
+
+    if(list->current != NULL){
+        if(list->current->next==NULL){
+            list->tail=list->current->prev;
+            list->current->prev->next=NULL;
+            free(list->current);
+        }
+        if(list->current->prev==NULL){
+            list->head=list->current->next;
+            list->current->next->prev=NULL;
+            free(list->current);
+        }
+        
+    }
+
     return NULL;
+
 }
 
 void cleanList(List * list) {
