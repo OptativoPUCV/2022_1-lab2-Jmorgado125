@@ -136,7 +136,7 @@ void * popCurrent(List * list) {
         }
         return DatoElim->data;
     }
-    list->current=list->current->next;
+    list->head->next=DatoElim;
     return NULL;
 
 }
