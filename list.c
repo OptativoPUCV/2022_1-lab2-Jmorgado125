@@ -38,23 +38,22 @@ List * createList() {
 
 void * firstList(List * lista) {
   if(lista->head ==NULL){return NULL;}
-  lista->head=lista->current
+  lista->head=lista->current;
   return lista->head->data;
 }
 
 void * nextList(List * lista) {
-  if(lista->current->next=NULL)
-  {return NULL;}
+  if(lista->current->next=NULL){return NULL;}
   lista->current=lista->current->next;
-  return lista->next->data;
+  return lista->current->data;
 }
 
 void * lastList(List * lista) {
     if(lista->tail ==NULL){return NULL;}
     while(lista->current->next != NULL){
         lista->current=lista->current->next;
-}
-    lista->tail=lista->current
+    }
+    lista->tail=lista->current;
     return lista->tail->data;
 }
 
