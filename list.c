@@ -128,20 +128,15 @@ void * popCurrent(List * list) {
             list->tail=list->current->prev;
             list->current->prev->next=NULL;
             free(list->current);
-            list->current=list->current->next;
         }
         if(list->current->prev==NULL){
             list->head=list->current->next;
             list->current->next->prev=NULL;
             free(list->current);
-            list->current=list->current->next;
         }
-        list->current->prev->next=list->current->next;
-        list->current->next->prev=list->current->prev;
-        free(list->current);
-        list->current=list->current->next;
         return DatoElim->data;
     }
+    list->current=list->current->next;
     return NULL;
 
 }
