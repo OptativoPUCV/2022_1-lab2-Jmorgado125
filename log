@@ -224,3 +224,23 @@ do., 20 de mar. de 2022 22:25:04:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 1c49421
+do., 20 de mar. de 2022 22:26:45: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function 'nextList':
+list.c:49:19: error: statement with no effect [-Werror=unused-value]
+     lista->current==lista->current->next
+     ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+list.c:50:5: error: expected ';' before 'return'
+     return local->data;
+     ^~~~~~
+list.c:46:11: error: variable 'local' set but not used [-Werror=unused-but-set-variable]
+     Node* local;
+           ^~~~~
+list.c:51:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+fc117b9
