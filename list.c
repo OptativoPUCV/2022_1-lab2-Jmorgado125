@@ -134,9 +134,10 @@ void * popCurrent(List * list) {
             list->current->next->prev=NULL;
             free(list->current);
         }
+
         return DatoElim->data;
     }
-
+    list->current=list->current->next;
     return NULL;
 
 }
