@@ -265,3 +265,9 @@ do., 20 de mar. de 2022 22:33:29:
  1 file changed, 1 insertion(+)
  tests:  0|0
 596ab46
+do., 20 de mar. de 2022 22:33:58: 
+ list.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  3|5
+total_score: 15/70
+3a91b35
