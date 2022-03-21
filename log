@@ -151,3 +151,17 @@ do., 20 de mar. de 2022 21:59:07:
  tests:  3|5
 total_score: 15/70
 a509c83
+do., 20 de mar. de 2022 22:01:14: 
+ list.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+list.c: In function 'nextList':
+list.c:48:3: error: expected ';' before 'return'
+   return lista->current->data;
+   ^~~~~~
+list.c:50:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+01b8f6f
