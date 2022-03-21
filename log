@@ -176,3 +176,9 @@ do., 20 de mar. de 2022 22:04:58:
  tests:  3|5
 total_score: 15/70
 0ced2ca
+do., 20 de mar. de 2022 22:05:50: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  3|5
+total_score: 15/70
+1937639
