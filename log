@@ -118,3 +118,14 @@ do., 20 de mar. de 2022 21:52:34:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 fdba601
+do., 20 de mar. de 2022 21:53:06: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function 'createList':
+list.c:36:15: error: return from incompatible pointer type [-Werror=incompatible-pointer-types]
+   return lista->head;
+          ~~~~~^~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+c0f2103
