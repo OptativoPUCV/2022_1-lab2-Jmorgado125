@@ -255,3 +255,8 @@ do., 20 de mar. de 2022 22:29:56:
  tests:  3|5
 total_score: 15/70
 84bdab1
+do., 20 de mar. de 2022 22:31:52: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  0|0
+500e8d4
