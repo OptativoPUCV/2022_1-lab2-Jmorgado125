@@ -43,10 +43,11 @@ void * firstList(List * lista) {
 }
 
 void * nextList(List * lista){
-  if(lista->current->next==NULL){return NULL;}
-  lista->current->next=lista->current;
-  lista->current=lista->current->next;
-  return lista->current->data;
+    Node* local;
+    if(lista->current->next==NULL){return NULL;}
+    local=lista->current->next;
+    lista->current=lista->current->next;
+    return local->data;
 }
 
 void * lastList(List * lista) {
