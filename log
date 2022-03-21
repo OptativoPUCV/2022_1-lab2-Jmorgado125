@@ -102,3 +102,14 @@ list.c:46:3: error: suggest parentheses around assignment used as truth value [-
 cc1.exe: all warnings being treated as errors
 Compilation failed
 05662ff
+do., 20 de mar. de 2022 21:44:50: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function 'nextList':
+list.c:46:3: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   if(lista->current->next=NULL){return NULL;}
+   ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+87d565b
