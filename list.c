@@ -45,6 +45,7 @@ void * firstList(List * lista) {
 void * nextList(List * lista){
   if(lista->current->next==NULL){return NULL;}
   lista->current->next=lista->current;
+  lista->current=lista->current->next;
   return lista->current->data;
 }
 
@@ -59,8 +60,7 @@ void * lastList(List * lista) {
 
 void * prevList(List * lista) {
   if(lista->current->prev ==NULL){return NULL;}
-  lista->current->prev=lista->current;
-  lista->current=lista->current->prev;
+  lista->current->prev=lista->current
   return lista->current->data;
 }
 
