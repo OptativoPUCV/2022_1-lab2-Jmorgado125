@@ -113,3 +113,8 @@ list.c:46:3: error: suggest parentheses around assignment used as truth value [-
 cc1.exe: all warnings being treated as errors
 Compilation failed
 87d565b
+do., 20 de mar. de 2022 21:52:34: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+fdba601
